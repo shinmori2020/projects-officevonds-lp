@@ -525,6 +525,94 @@ a {
   background-color: rgba(37, 143, 65, 0.95);
 }
 
+/* ---- Hero SP CTA (MV下ボタン) ---- */
+.p-hero-sp-cta {
+  display: block;
+}
+
+.p-hero-sp-cta__badges {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.p-hero-sp-cta__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.p-hero-sp-cta__badge--blue {
+  background-color: #2972C6;
+}
+
+.p-hero-sp-cta__badge--red {
+  background-color: #C7494B;
+}
+
+.p-hero-sp-cta__buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.p-hero-sp-cta__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 8px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.p-hero-sp-cta__btn--primary {
+  background-color: var(--color-primary);
+}
+
+.p-hero-sp-cta__btn--primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.p-hero-sp-cta__btn--line {
+  background-color: var(--color-green);
+}
+
+.p-hero-sp-cta__btn--line:hover {
+  background-color: var(--color-green-hover);
+}
+
+.p-hero-sp-cta__icon {
+  flex-shrink: 0;
+}
+
+@media (min-width: 480px) {
+  .p-hero-sp-cta__badges {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .p-hero-sp-cta__buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* SP時: PC用バッジ・CTAを非表示 */
+.p-hero__badges {
+  display: none;
+}
+
+.p-hero__cta {
+  display: none;
+}
+
 /* ---- Intro ---- */
 .p-intro {
   padding: var(--section-padding) 0;
@@ -1127,10 +1215,12 @@ body {
   }
 
   .p-hero__badges {
+    display: flex;
     margin-bottom: 0;
   }
 
   .p-hero__cta {
+    display: flex;
     flex: 0 0 auto;
     align-self: flex-end;
     margin-top: 0;
@@ -1139,6 +1229,11 @@ body {
   .p-hero__cta .c-btn {
     max-width: none;
     width: 280px;
+  }
+
+  /* SP用ボタンをPC時に非表示 */
+  .p-hero-sp-cta {
+    display: none;
   }
 
   /* --- Intro --- */
