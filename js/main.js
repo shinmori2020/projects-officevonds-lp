@@ -11,7 +11,7 @@
   function createOverlay() {
     overlay = document.createElement('div');
     overlay.classList.add('header__overlay');
-    document.body.appendChild(overlay);
+    hamburger.parentElement.appendChild(overlay);
     overlay.addEventListener('click', closeMenu);
   }
 
@@ -49,34 +49,6 @@
     var navLinks = nav.querySelectorAll('.header__nav-link');
     navLinks.forEach(function (link) {
       link.addEventListener('click', closeMenu);
-    });
-  }
-
-  /* ============================================================
-     スクロールアニメーション（Intersection Observer）
-     ============================================================ */
-  var fadeInElements = document.querySelectorAll('.js-fade-in');
-
-  if (fadeInElements.length > 0 && 'IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    fadeInElements.forEach(function (el) {
-      observer.observe(el);
-    });
-  } else {
-    // Intersection Observer非対応の場合はすべて表示
-    fadeInElements.forEach(function (el) {
-      el.classList.add('is-visible');
     });
   }
 
