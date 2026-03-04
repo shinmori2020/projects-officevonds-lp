@@ -65,11 +65,10 @@
     <section class="p-hero">
       <!-- 背景プレースホルダー（実画像差し替え時はCSSのbackground-imageに変更） -->
       <div class="p-hero__bg" aria-hidden="true">
-        <div class="c-placeholder c-placeholder--hero-bg">
-          <svg class="c-placeholder__icon" aria-hidden="true" width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-            <rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-          <p class="c-placeholder__text">メインビジュアル</p>
-        </div>
+        <picture>
+          <source srcset="images/hero/mv_pc.png" media="(min-width: 768px)">
+          <img src="images/hero/mv_sp.png" alt="山梨県で出張買取" width="750" height="1334" class="p-hero__bg-img">
+        </picture>
       </div>
       <div class="p-hero__inner">
         <div class="p-hero__content">
@@ -117,12 +116,10 @@
     <section class="p-intro" id="intro">
       <div class="p-intro__inner l-container">
         <div class="p-intro__image">
-          <div class="c-placeholder">
-            <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-              <rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/>
-            </svg>
-            <p class="c-placeholder__text">スタッフ写真</p>
-          </div>
+          <picture>
+            <source srcset="images/section/sec_01_pc.jpg" media="(min-width: 768px)">
+            <img src="images/section/sec_01_sp.jpg" alt="スタッフ写真" width="400" height="500" loading="lazy">
+          </picture>
         </div>
         <div class="p-intro__content">
           <h2 class="p-intro__title">私たちが直接、査定に伺います。</h2>
@@ -149,10 +146,7 @@
         <h2 class="c-section-title"><span class="c-section-title__text">直近の買取実績</span></h2>
         <div class="p-results__grid">
           <div class="p-results__card">
-            <div class="c-placeholder c-placeholder--square">
-              <svg class="c-placeholder__icon" aria-hidden="true" width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="#999" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-              <p class="c-placeholder__text">商品画像</p>
-            </div>
+            <img src="images/section/sec_02_01.jpg" alt="ROLEX デイトナ" width="300" height="300" loading="lazy" class="p-results__card-img">
             <div class="p-results__card-body">
               <p class="p-results__card-name">ROLEX デイトナ</p>
               <p class="p-results__card-price">1,200,000<span class="p-results__card-yen">円</span></p>
@@ -161,10 +155,7 @@
             </div>
           </div>
           <div class="p-results__card">
-            <div class="c-placeholder c-placeholder--square">
-              <svg class="c-placeholder__icon" aria-hidden="true" width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="#999" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-              <p class="c-placeholder__text">商品画像</p>
-            </div>
+            <img src="images/section/sec_02_02.jpg" alt="K18ネックレス" width="300" height="300" loading="lazy" class="p-results__card-img">
             <div class="p-results__card-body">
               <p class="p-results__card-name">K18ネックレス</p>
               <p class="p-results__card-price">120,000<span class="p-results__card-yen">円</span></p>
@@ -173,10 +164,7 @@
             </div>
           </div>
           <div class="p-results__card">
-            <div class="c-placeholder c-placeholder--square">
-              <svg class="c-placeholder__icon" aria-hidden="true" width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="#999" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-              <p class="c-placeholder__text">商品画像</p>
-            </div>
+            <img src="images/section/sec_02_03.jpg" alt="ヴィトンバッグ" width="300" height="300" loading="lazy" class="p-results__card-img">
             <div class="p-results__card-body">
               <p class="p-results__card-name">ヴィトンバッグ</p>
               <p class="p-results__card-price">85,000<span class="p-results__card-yen">円</span></p>
@@ -255,10 +243,7 @@
         <div class="p-reasons__list">
           <div class="p-reasons__item">
             <div class="p-reasons__item-image">
-              <div class="c-placeholder">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-                <p class="c-placeholder__text">スーツ姿のスタッフ</p>
-              </div>
+              <img src="images/section/sec_03_01.png" alt="スーツ姿のスタッフ" width="400" height="300" loading="lazy">
             </div>
             <div class="p-reasons__item-content">
               <p class="p-reasons__item-number"><svg class="p-reasons__item-check" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="#F24815"><rect width="20" height="20" rx="3"/><path d="M6 10l3 3 5-6" stroke="#fff" stroke-width="2" fill="none"/></svg> 理由その1</p>
@@ -269,10 +254,7 @@
           </div>
           <div class="p-reasons__item">
             <div class="p-reasons__item-image">
-              <div class="c-placeholder">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-                <p class="c-placeholder__text">車内のスタッフ</p>
-              </div>
+              <img src="images/section/sec_03_02.png" alt="車内のスタッフ" width="400" height="300" loading="lazy">
             </div>
             <div class="p-reasons__item-content">
               <p class="p-reasons__item-number"><svg class="p-reasons__item-check" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="#F24815"><rect width="20" height="20" rx="3"/><path d="M6 10l3 3 5-6" stroke="#fff" stroke-width="2" fill="none"/></svg> 理由その2</p>
@@ -283,10 +265,7 @@
           </div>
           <div class="p-reasons__item">
             <div class="p-reasons__item-image">
-              <div class="c-placeholder">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-                <p class="c-placeholder__text">査定風景</p>
-              </div>
+              <img src="images/section/sec_03_03.png" alt="査定風景" width="400" height="300" loading="lazy">
             </div>
             <div class="p-reasons__item-content">
               <p class="p-reasons__item-number"><svg class="p-reasons__item-check" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="#F24815"><rect width="20" height="20" rx="3"/><path d="M6 10l3 3 5-6" stroke="#fff" stroke-width="2" fill="none"/></svg> 理由その3</p>
@@ -354,10 +333,7 @@
     <section class="p-appeal">
       <div class="p-appeal__inner l-container">
         <div class="p-appeal__image">
-          <div class="c-placeholder c-placeholder--appeal">
-            <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/></svg>
-            <p class="c-placeholder__text">スタッフ写真</p>
-          </div>
+          <img src="images/common/cta_a.png" alt="スタッフ写真" width="400" height="500" loading="lazy" class="p-appeal__img">
         </div>
         <div class="p-appeal__content">
           <p class="p-appeal__text">捨ててしまう前に、<br class="u-pc-only">一度拝見させてください。</p>
@@ -438,12 +414,7 @@
       <div class="p-about__inner l-container">
         <h2 class="c-section-title"><span class="c-section-title__text">私たちについて</span></h2>
         <div class="p-about__image">
-          <div class="c-placeholder c-placeholder--wide">
-            <svg class="c-placeholder__icon" aria-hidden="true" width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-              <rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="18" cy="20" r="4"/><path d="M6 36l10-10 6 6 8-10 12 14"/>
-            </svg>
-            <p class="c-placeholder__text">チーム集合写真</p>
-          </div>
+          <img src="images/section/sec_07_01.png" alt="チーム集合写真" width="800" height="400" loading="lazy" class="p-about__img">
         </div>
         <div class="p-about__message">
           <p>初めての出張買取は不安があるかと思います。</p>
