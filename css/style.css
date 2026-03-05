@@ -80,8 +80,8 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.97);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .l-header__inner {
@@ -272,35 +272,11 @@ img {
 .header__logo-link {
   display: flex;
   align-items: center;
-  gap: 4px;
 }
 
-.header__logo-icon-placeholder {
-  width: 36px;
-  height: 36px;
-  background-color: #ccc;
-  flex-shrink: 0;
-  align-self: center;
-}
-
-.header__logo-kaitori {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #222;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  align-self: center;
-}
-
-.header__logo-concierge {
-  font-size: 1.125rem;
-  font-weight: 800;
-  color: #fff;
-  background-color: #222;
-  padding: 6px 8px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  align-self: center;
+.header__logo-img {
+  height: 100px;
+  width: auto;
 }
 
 .header__cta {
@@ -335,7 +311,7 @@ img {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--color-text);
+  background-color: #fff;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -402,7 +378,7 @@ img {
 /* ---- Hero ---- */
 .p-hero {
   position: relative;
-  margin-top: 52px;
+  margin-top: 116px;
   overflow: hidden;
 }
 
@@ -1167,10 +1143,9 @@ img {
   margin-bottom: 12px;
 }
 
-.c-placeholder--logo {
-  width: 200px;
-  min-height: 100px;
-  background-color: #fff;
+.footer__logo-img {
+  height: 100px;
+  width: auto;
 }
 
 .footer__info {
@@ -1303,8 +1278,8 @@ body {
 
   /* --- Hero --- */
   .p-hero {
-    margin-top: 52px;
-    min-height: calc(100vh - 52px);
+    margin-top: 116px;
+    min-height: calc(100vh - 116px);
     display: flex;
     align-items: stretch;
   }
