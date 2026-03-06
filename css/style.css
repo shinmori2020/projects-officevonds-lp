@@ -80,7 +80,7 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.97);
+  background-color: #231815;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,8 +92,8 @@ img {
 
 /* ---- Footer ---- */
 .l-footer {
-  color: var(--color-text);
-  background-color: #F4F2F2;
+  color: #fff;
+  background-color: #231815;
 }
 
 .l-footer__inner {
@@ -103,14 +103,14 @@ img {
 }
 
 .l-footer__bottom {
-  background-color: #352121;
+  background-color: #1a110f;
   padding: 20px 16px;
   text-align: center;
 }
 
 .l-footer__copyright {
   font-size: 0.75rem;
-  color: #999;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ============================================================
@@ -1151,7 +1151,7 @@ img {
 .footer__info {
   font-size: var(--fz-body);
   line-height: 1.5;
-  color: var(--color-text);
+  color: #fff;
   font-weight: 700;
 }
 
