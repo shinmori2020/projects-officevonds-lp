@@ -14,10 +14,6 @@
   --color-bg-sub: #F8F6F2;
   --color-bg-light: #F5F5F5;
   --color-border: #E0E0E0;
-  --color-footer-bg: #333;
-  --color-footer-text: #ccc;
-  --color-copyright-bg: #222;
-
   /* フォント */
   --font-family-base: "M PLUS 1", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
 
@@ -56,11 +52,6 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* ============================================================
@@ -213,51 +204,6 @@ img {
 
 .c-btn__text-main {
   flex: 1;
-}
-
-/* ---- Placeholder ---- */
-.c-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #D9D9D9;
-  width: 100%;
-  min-height: 200px;
-  border-radius: 0;
-}
-
-.c-placeholder--hero {
-  min-height: 300px;
-}
-
-.c-placeholder--card {
-  min-height: 150px;
-  border-radius: 0;
-}
-
-.c-placeholder--square {
-  aspect-ratio: 1 / 1;
-  min-height: auto;
-}
-
-.c-placeholder--wide {
-  min-height: 300px;
-}
-
-.c-placeholder--appeal {
-  min-height: 200px;
-  width: 160px;
-  flex-shrink: 0;
-}
-
-.c-placeholder__icon {
-  margin-bottom: 12px;
-}
-
-.c-placeholder__text {
-  color: #999;
-  font-size: 0.875rem;
 }
 
 /* ============================================================
@@ -741,10 +687,6 @@ img {
 .p-reasons__item-image img {
   width: 100%;
   height: auto;
-}
-
-.p-reasons__item-image .c-placeholder {
-  min-height: 220px;
 }
 
 .p-reasons__item-number {
@@ -1365,11 +1307,6 @@ body {
     margin-inline: 0;
   }
 
-  .p-intro__image .c-placeholder {
-    height: 100%;
-    min-height: 400px;
-  }
-
   .p-intro__content {
     flex: 1;
   }
@@ -1390,10 +1327,6 @@ body {
     flex: 0 0 55%;
     margin-inline: 0;
     width: auto;
-  }
-
-  .p-reasons__item-image .c-placeholder {
-    min-height: 280px;
   }
 
   .p-reasons__item-content {
@@ -1441,11 +1374,6 @@ body {
     gap: 40px;
   }
 
-  .p-appeal .c-placeholder--appeal {
-    width: 240px;
-    min-height: 280px;
-  }
-
   .p-appeal__text {
     font-size: 1.75rem;
   }
@@ -1455,17 +1383,9 @@ body {
   }
 
   /* --- About --- */
-  .p-about__image .c-placeholder--wide {
-    min-height: 400px;
-  }
-
   .p-about__message {
     font-size: 1.0625rem;
   }
-
-  /* --- Company --- */
-
-  /* --- CTA Closing --- */
 
   /* --- Footer --- */
   .l-footer__inner {
