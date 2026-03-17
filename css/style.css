@@ -155,20 +155,13 @@ a {
   background-color: var(--color-primary-hover);
 }
 
-.c-btn--phone {
-  background-color: var(--color-green);
-  color: #fff;
-}
-
-.c-btn--phone:hover {
-  background-color: var(--color-green-hover);
-}
-
+.c-btn--phone,
 .c-btn--line {
   background-color: var(--color-green);
   color: #fff;
 }
 
+.c-btn--phone:hover,
 .c-btn--line:hover {
   background-color: var(--color-green-hover);
 }
@@ -679,7 +672,6 @@ a {
 }
 
 .p-reasons__item-image {
-  width: 100%;
   margin-inline: calc(-1 * var(--container-padding));
   width: calc(100% + 2 * var(--container-padding));
 }
