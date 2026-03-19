@@ -1412,6 +1412,7 @@ body {
    ========================================================================== */
 .p-page-header {
   padding: var(--section-padding) 0 0;
+  margin-top: 116px;
 }
 .p-page-header__title {
   font-family: var(--font-family-base);
